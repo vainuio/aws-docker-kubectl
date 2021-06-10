@@ -1,4 +1,4 @@
-FROM docker:latest
+FROM docker:stable
 
 RUN apk update && apk --no-cache add gettext ca-certificates openssl python py-pip
 RUN pip install --no-cache-dir awscli
